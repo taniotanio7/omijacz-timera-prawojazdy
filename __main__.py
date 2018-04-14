@@ -30,3 +30,4 @@ if __name__ == "__main__":
         time.sleep(2.5)
         # Przechodzenie do następnej strony
         strona.nastepna_strona()
+    strona.zamknij_strone()

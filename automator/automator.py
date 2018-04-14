@@ -13,6 +13,9 @@ class Prawojazdy:
             strona = 'http://' + strona
             self.browser.visit(strona)
 
+    def zamknij_strone(self):
+        self.browser.close()
+
     def zaloguj_sie(self):
         self.otworz_strone("https://www.prawojazdy.com.pl/zaloguj")
 
