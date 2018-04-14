@@ -85,6 +85,7 @@ class Prawojazdy_API:
         r.raise_for_status()
         response = r.json()
         if response['success'] == False:
-            print("Niepowodzenie zapytnia. Próbuję jeszcze raz...")
-            time.sleep(5)
-            self.send_request(content, header)
+            return False
+        else:
+            return True
+

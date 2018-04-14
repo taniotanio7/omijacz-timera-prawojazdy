@@ -71,9 +71,9 @@ class Prawojazdy:
         else:
             raise Exception("Nie znaleziono numeru slajdu")
 
-    def check_if_not_ended(self):
-        expression1 = self.browser.is_text_not_present('Gratulacje!')
-        expression2 = self.browser.is_text_not_present('Aby rozpocząć ćwiczenia dokończ naukę')
+    def check_if_ended(self):
+        expression1 = self.browser.is_text_present('Gratulacje!')
+        expression2 = self.browser.is_text_present('Aby rozpocząć ćwiczenia dokończ naukę')
         return expression1 or expression2
 
     def get_url(self):
