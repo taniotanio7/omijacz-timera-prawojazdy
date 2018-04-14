@@ -23,6 +23,6 @@ if __name__ == "__main__":
         # Tworzenie i przekazywanie zapytania AJAX
         content = ajax.get_content(slide_numer)
         ajax.send_request(content, ajax_header)
-        time.sleep(2)
+        time.sleep(2.5)
         # Przechodzenie do następnej strony
         strona.nastepna_strona()

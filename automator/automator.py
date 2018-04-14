@@ -67,6 +67,7 @@ class Prawojazdy:
         m = rg.search(string)
         if m:
             number = m.group(1)
+            return number
         else:
             raise Exception("Nie znaleziono numeru slajdu")
 

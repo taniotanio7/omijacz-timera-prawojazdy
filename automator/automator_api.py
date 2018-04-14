@@ -1,11 +1,13 @@
 import requests
 from urllib.parse import urlparse
 import os.path
+import time
 
 
 class Prawojazdy_API:
     def __init__(self, cookie, current_url):
-        self.cookie = "PHPSESSID=" + cookie
+        self.cookie = cookie
+        self.cookie_str = "PHPSESSID=" + cookie
         self.current_url = current_url
     origin = "https://ekurs.prawojazdy.com.pl"
     requested_with = "XMLHttpRequest"
@@ -52,7 +54,7 @@ class Prawojazdy_API:
         content_dict = {
             "content": "",
             "slideType": "1",
-            "currentSlide": str(slide_id),
+            "currentSlide": slide_id,
         }
         content_dict.update(content_parsed) # Dodaje wpisy z content_parsed do content
         # content = content.format(**content_dict)
@@ -74,7 +76,7 @@ class Prawojazdy_API:
             "Referer": self.current_url,
             "Accept-Encoding": self.accept_encoding,
             "Accept-Language": self.accept_language,
-            "Cookie": self.cookie
+            "Cookie": self.cookie_str
         }
         return header
 
@@ -83,4 +85,6 @@ class Prawojazdy_API:
         r.raise_for_status()
         response = r.json()
         if response['success'] == False:
-            raise Exception("Błąd zapytania.")
+            print("Niepowodzenie zapytnia. Próbuję jeszcze raz...")
+            time.sleep(5)
+            self.send_request(content, header)
