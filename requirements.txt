@@ -6,4 +6,4 @@
 # scipy==1.0
 requests
 splinter
-selenium
+selenium==3.11.0
