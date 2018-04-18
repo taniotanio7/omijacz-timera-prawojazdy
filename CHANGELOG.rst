@@ -2,9 +2,10 @@
 Changelog
 =========
 
-Version 0.1
+Wersja 0.1
 ===========
 
-- Feature A added
-- FIX: nasty bug #1729 fixed
-- add your changes here!
+* Pierwsza wersja
++ Omijanie przynudzających slajdów
++ Żyj! Nie trać czasu...
+- Prawdopodobnie zawiera bugi

@@ -6,7 +6,7 @@ console script. To run this script uncomment the following line in the
 entry_points section in setup.py:
 
     [console_scripts]
-    fibonacci = haki_prawojazdycompl.skeleton:run
+    fibonacci = omijacz_timera_prawojazdy.skeleton:run
 
 Then run `python setup.py install` which will install the command `fibonacci`
 inside your current environment.
@@ -21,13 +21,15 @@ import argparse
 import sys
 import logging
 
-from haki_prawojazdycompl import __version__
+from src.omijacz_timera_prawojazdy.execute import execute
 
+__version__ = "0.1"
 __author__ = "Jonatan Witoszek"
 __copyright__ = "Jonatan Witoszek"
 __license__ = "mit"
 
 _logger = logging.getLogger(__name__)
+
 
 
 def fib(n):
@@ -56,11 +58,11 @@ def parse_args(args):
       :obj:`argparse.Namespace`: command line parameters namespace
     """
     parser = argparse.ArgumentParser(
-        description="Just a Fibonnaci demonstration")
+        description="Skrypt omijający zbyt długi wymagany czas na slajd na stronie prawojazdy.com.pl")
     parser.add_argument(
         '--version',
         action='version',
-        version='haki-prawojazdy.com.pl {ver}'.format(ver=__version__))
+        version='omijacz_timera_prawojazdy {ver}'.format(ver=__version__))
     parser.add_argument(
         dest="n",
         help="n-th Fibonacci number",
@@ -102,9 +104,8 @@ def main(args):
     """
     args = parse_args(args)
     setup_logging(args.loglevel)
-    _logger.debug("Starting crazy calculations...")
-    print("The {}-th Fibonacci number is {}".format(args.n, fib(args.n)))
-    _logger.info("Script ends here")
+    _logger.debug("Rozpoczynam pracę...")
+    execute()
 
 
 def run():

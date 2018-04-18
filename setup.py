@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    Setup file for haki_prawojazdycompl.
+    Setup file for omijacz_timera_prawojazdy.
 
     This file was generated with PyScaffold 3.0.2.
     PyScaffold helps you to put up the scaffold of your new Python project.
@@ -14,9 +14,9 @@ from setuptools import setup
 # Add here console scripts and other entry points in ini-style format
 entry_points = """
 [console_scripts]
-# script_name = haki_prawojazdycompl.module:function
+# script_name = omijacz_timera_prawojazdy.module:function
 # For example:
-# fibonacci = haki_prawojazdycompl.skeleton:run
+czytajprawojazdy=execute
 """
 
 
