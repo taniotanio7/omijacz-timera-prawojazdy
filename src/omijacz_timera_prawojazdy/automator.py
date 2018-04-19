@@ -1,10 +1,17 @@
-from splinter import Browser
 import re
+
 from selenium.webdriver.common.keys import Keys
+from splinter import Browser
+from splinter.driver.webdriver.chrome import Options
+
 
 class Prawojazdy:
     def __init__(self):
-        self.browser = Browser("chrome", user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36")
+        options = Options()
+        # options.add_argument('--disable-accelerated-2d-canvas')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36')
+        self.browser = Browser("chrome", options=options)
 
     def otworz_strone(self, strona):
         if strona.startswith('http://') or strona.startswith('https://'):

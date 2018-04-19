@@ -1,7 +1,7 @@
-import requests
 from urllib.parse import urlparse
+
 import os.path
-import time
+import requests
 
 
 class Prawojazdy_API:
@@ -81,8 +81,14 @@ class Prawojazdy_API:
         return header
 
     def send_request(self, content, header):
-        r = requests.post(self.URL_post, data=content, headers=header)
-        r.raise_for_status()
+        try:
+            r = requests.post(self.URL_post, data=content, headers=header)
+        except requests.exceptions.ConnectionError:
+            return False
+        try:
+            r.raise_for_status()
+        except:
+            return False
         response = r.json()
         if response['success'] == False:
             return False
