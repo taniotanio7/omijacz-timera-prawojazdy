@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftaniotanio7%2Fomijacz-timera-prawojazdy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftaniotanio7%2Fomijacz-timera-prawojazdy?ref=badge_shield)
+
 ======================
 omijacz-timera-prawojazdy
 ======================
@@ -23,3 +25,7 @@ Note
 
 This project has been set up using PyScaffold 3.0.2. For details and usage
 information on PyScaffold see http://pyscaffold.org/.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftaniotanio7%2Fomijacz-timera-prawojazdy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftaniotanio7%2Fomijacz-timera-prawojazdy?ref=badge_large)
