@@ -21,7 +21,7 @@ class Prawojazdy:
             self.browser.visit(strona)
 
     def zamknij_strone(self):
-        self.browser.close()
+        self.browser.quit()
 
     def zaloguj_sie(self):
         self.otworz_strone("https://www.prawojazdy.com.pl/zaloguj")
