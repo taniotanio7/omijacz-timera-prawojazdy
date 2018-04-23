@@ -69,6 +69,13 @@ class Prawojazdy:
         xpath = """//*[@id="idSlideQuestion"]"""
         return self.browser.find_by_xpath(xpath).first.text
 
+    def check_if_not_question(self):
+        string = self.find_slide_string()
+        if "Nr pytania" in string:
+            return True
+        else:
+            return False
+
     def find_slide_number(self):
         string = self.find_slide_string()
         re1 = '.*?'
@@ -79,7 +86,7 @@ class Prawojazdy:
             number = m.group(1)
             return number
         else:
-            raise Exception("Nie znaleziono numeru slajdu")
+            return "0"
 
     def check_if_ended(self):
         expression1 = self.browser.is_text_present('Gratulacje!')

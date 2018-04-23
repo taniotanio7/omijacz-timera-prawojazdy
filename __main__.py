@@ -29,8 +29,8 @@ if __name__ == "__main__":
             print("Niepowodzenie zapytania. Próbuję jeszcze raz...")
             time.sleep(5)
             ajax.send_request(content, ajax_header)
-            strona.browser.reload()
-        time.sleep(2.5*TIMER)
-        # Przechodzenie do następnej strony
+            # strona.browser.reload()
+        # time.sleep(2.5*TIMER)
+        #  Przechodzenie do następnej strony
         strona.nastepna_strona()
     strona.zamknij_strone()

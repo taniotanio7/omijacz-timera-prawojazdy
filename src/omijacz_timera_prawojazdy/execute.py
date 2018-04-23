@@ -1,6 +1,8 @@
+import time
+
 import src.omijacz_timera_prawojazdy.automator as automator
 import src.omijacz_timera_prawojazdy.automator_api as automator_api
-import time
+
 
 def execute():
     strona = automator.Prawojazdy()
@@ -18,8 +20,14 @@ def execute():
     ajax_header = ajax.get_header()
     # Pętla zaliczania slajdów
     while not strona.check_if_ended():
+        # Sprawdzenie czy nie pytanie TODO: Tymczasowe rozwiązanie problemu
+        if strona.check_if_not_question():
+            strona.nastepna_strona()
+            continue
         # Odczytywanie danych ze strony
         slide_numer = strona.find_slide_number()
+        if slide_numer == "0":
+            strona.nastepna_strona()
         # Tworzenie i przekazywanie zapytania AJAX
         content = ajax.get_content(slide_numer)
         if not ajax.send_request(content, ajax_header):
