@@ -1,6 +1,7 @@
 # 🚘 Omijacz Timera Prawojazdy 🚔
 
 🎉 Żyj! 🎉
+
 Nie trać czasu na nudne, powtarzające się slajdy...
 
 ## Opis
