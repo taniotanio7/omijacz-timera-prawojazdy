@@ -4,9 +4,8 @@
 
 ## Opis
 
-Skrypt pozwala na "ominięcie" slajdów w kursie e-learningowym na stronie prawojazdy.com.pl
+Skrypt pozwala na "ominięcie" slajdów w kursie e-learningowym na stronie **prawojazdy.com.pl**
 Wykorzystuje sposób działania serwisu oraz fakt, że po stronie serwera nie następuje żadna weryfikacja czy slajd został faktycznie obejrzany.
-Program zgodny wyłącznie z Pythonem w wersji 3.6 wzwyż.
 
 ## Instalacja
 
@@ -19,7 +18,7 @@ lub
 ```python
 pip3 install omijacz-timera
 ```
-** Komenda zależy od twojej instalacji Pythona **
+*Komenda zależy od twojej instalacji Pythona*
 
 ### Ręczna instalacja
 
@@ -68,16 +67,16 @@ Zainstaluj potrzebne zależności
 pip install -r requirements.txt
 ```
 
-## Autorzy
+## Autorzy :sunglasses:
 
 * **Jonatan Witoszek** - *Początek* - [taniotanio7](https://github.com/taniotanio7)
 
 Zobacz pełną listę [osób](https://github.com/taniotanio7/omijacz-timera-prawojazdy/contributors), która pomogła w projekcie.
 
-## Licence
+## Licence :briefcase:
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Acknowledgments :clap:
 
 * Hat tip to Kenneth Reitz for his setup.py example!
