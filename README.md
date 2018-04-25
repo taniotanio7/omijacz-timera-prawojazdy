@@ -1,6 +1,7 @@
-# Omijacz Timera Prawojazdy
+# 🚘 Omijacz Timera Prawojazdy 🚔
 
-Żyj! Nie trać czasu na nudne, powtarzające się slajdy...
+🎉 Żyj! 🎉
+Nie trać czasu na nudne, powtarzające się slajdy...
 
 ## Opis
 
@@ -35,7 +36,7 @@ Zainstaluj z użyciem setup.py:
 python setup.py install
 ```
 
-## Zgłaszanie błędów
+## Zgłaszanie błędów  :poop:
 
 Problemy można zgłaszać tutaj: https://github.com/taniotanio7/omijacz-timera-prawojazdy/issues
 
@@ -51,7 +52,7 @@ Co potrzebujesz, aby rozpocząć
 - pip
 - git
 
-### Instalacja
+### Instalacja 
 
 Krok po kroku jak utworzyć środowisko programistyczne.
 
@@ -67,16 +68,16 @@ Zainstaluj potrzebne zależności
 pip install -r requirements.txt
 ```
 
-## Autorzy :sunglasses:
+## Autorzy  :sunglasses:
 
 * **Jonatan Witoszek** - *Początek* - [taniotanio7](https://github.com/taniotanio7)
 
 Zobacz pełną listę [osób](https://github.com/taniotanio7/omijacz-timera-prawojazdy/contributors), która pomogła w projekcie.
 
-## Licence :briefcase:
+## Licence  :briefcase:
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments :clap:
+## Acknowledgments  :clap:
 
 * Hat tip to Kenneth Reitz for his setup.py example!
