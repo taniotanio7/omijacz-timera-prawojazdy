@@ -1,8 +1,24 @@
+"""Uruchamia automatyzację slajdów na prawojazdy.com.pl
+Usage: omijacz_timera [-h] [-v] [-v]
+-h  pokaż pomoc (o taką!)
+-v  wersja
+-vv  wyświetlaj więcej tekstu (verbose)
+"""
+
+from __future__ import division, print_function, absolute_import
+
+import datetime
 import time
 
-import src.omijacz_timera_prawojazdy.automator as automator
-import src.omijacz_timera_prawojazdy.automator_api as automator_api
+from docopt import docopt
 
+import omijacz_timera as automator
+import omijacz_timera as automator_api
+
+__version__ = "0.1"
+__author__ = "Jonatan Witoszek"
+__copyright__ = "Jonatan Witoszek"
+__license__ = "MIT"
 
 def execute():
     strona = automator.Prawojazdy()
@@ -20,7 +36,7 @@ def execute():
     ajax_header = ajax.get_header()
     # Pętla zaliczania slajdów
     while not strona.check_if_ended():
-        # Sprawdzenie czy nie pytanie TODO: Tymczasowe rozwiązanie problemu
+        # Sprawdzenie czy nie pytanie TODO: Temporary fix
         if strona.check_if_not_question():
             strona.nastepna_strona()
             continue
@@ -39,3 +55,21 @@ def execute():
         # Przechodzenie do następnej strony
         strona.nastepna_strona()
     strona.zamknij_strone()
+
+def main():
+    args = docopt(__doc__)
+    # Arguments handling
+    if args['-v']:
+        print("""omijacz-timera-prawojazdy wersja {version}
+        Created by {author}
+        Copyright Jonatan Witoszek - {year} {licence}""".format(
+            version=__version__,
+            author=__author__,
+            year=datetime.datetime.now().year,
+            licence=__license__
+        ))
+    VERBOSE = args['-vv'] or False #  Todo: Add verbose messages
+    execute()
+
+if __name__ == "__main__":
+    main()

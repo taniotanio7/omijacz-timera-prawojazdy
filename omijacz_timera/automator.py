@@ -21,6 +21,7 @@ class Prawojazdy:
             self.browser.visit(strona)
 
     def zamknij_strone(self):
+        # Todo: dodać opcję wylogowania ze strony
         self.browser.quit()
 
     def zaloguj_sie(self):

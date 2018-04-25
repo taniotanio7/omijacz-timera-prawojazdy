@@ -1,7 +1,7 @@
 import time
 
-import src.omijacz_timera_prawojazdy.automator as automator
-import src.omijacz_timera_prawojazdy.automator_api as automator_api
+import omijacz_timera as automator
+import omijacz_timera as automator_api
 
 TIMER = 0
 

@@ -1,6 +1,6 @@
+import os.path
 from urllib.parse import urlparse
 
-import os.path
 import requests
 
 
