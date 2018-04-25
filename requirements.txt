@@ -3,7 +3,6 @@
 requests==2.18.4
 splinter
 selenium
-docopt
+docopt==0.6.2
 ipython
-twine
-pyinstaller
+twine==1.11.0
