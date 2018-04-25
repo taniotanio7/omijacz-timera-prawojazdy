@@ -7,15 +7,17 @@ Nie trać czasu na nudne, powtarzające się slajdy...
 [![Build Status](https://travis-ci.org/taniotanio7/omijacz-timera-prawojazdy.svg?branch=master)](https://travis-ci.org/taniotanio7/omijacz-timera-prawojazdy)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f1483bc09e7003232cb7/maintainability)](https://codeclimate.com/github/taniotanio7/omijacz-timera-prawojazdy/maintainability)
 
-
 ## Opis
 
 Skrypt pozwala na "ominięcie" slajdów w kursie e-learningowym na stronie **prawojazdy.com.pl**
 Wykorzystuje sposób działania serwisu oraz fakt, że po stronie serwera nie następuje żadna weryfikacja czy slajd został faktycznie obejrzany.
 
+
 ## Instalacja
 
-Musisz posiadać zainstalowanego Pythona oraz pip. W wierszu poleceń / terminalu wpisz:
+Musisz posiadać zainstalowanego Pythona, pip oraz **Google Chrome**.
+
+W wierszu poleceń / terminalu wpisz:
 
 ```python
 pip install omijacz-timera
@@ -40,12 +42,49 @@ Zainstaluj z użyciem setup.py:
 ```
 python setup.py install
 ```
+## Korzystanie
+
+1. W wierszu poleceń / terminalu wpisz:
+
+```
+omijacz_timera
+```
+
+Otworzy się nowy proces Google Chrome:
+
+![Nowe okno Google Chrome ze stroną do logowania](/readme_images/login_screen.png)
+
+2. Zaloguj się!
+
+![Strona po wpisaniu danych do logwania](/readme_images/login_screen/filled.png)
+
+> Twoje hasło nie jest nigdzie zapisywane zostaje użyte tylko do zalogowania się w przeglądarce
+
+3. Kliknij w przycisk "Przejdź do kursu"
+
+![Przycisk przejdź do kursu](/readme_images/course_select_main.png)
+
+4. Wybierz lekcję
+
+![Wybór lekcji](/readme_images/course_select_choice.png)
+
+5. Ciesz się obejrzaną lekcją!
+
+![Automatyzacja slajdów](/readme_images/course_automated.png)
+
+### :rotating_light: Dobra rada :rotating_light:
+
+> Mimo wszystko zalecałbym po "odhaczeniu" lekcji obejrzenie wszystkich slajdów.
+>
+> Dzięki temu coś zapamiętasz, a nie będziesz musiał dodatkowo marnować swojego czasu
+> na odczekanie, aż będziesz mógł przejść dalej
+
 
 ## Zgłaszanie błędów  :poop:
 
 Problemy można zgłaszać tutaj: https://github.com/taniotanio7/omijacz-timera-prawojazdy/issues
 
-## Jak zacząć
+## Development environment
 
 Te instrukcje pomogą Ci uruchomić kopię projektu na twoim lokalnym urządzeniu w celu programowania lub testowania. 
 
@@ -72,6 +111,13 @@ Zainstaluj potrzebne zależności
 ```
 pip install -r requirements.txt
 ```
+
+## Todo
+
+- [ ] Przyśpieszyć działanie
+- [ ] Refaktoryzacja
+- [ ] Poprawa obsługi slajdów z pytaniem
+- [ ] Możliwość wyboru innych przeglądarek niż Chrome
 
 ## Autorzy  :sunglasses:
 

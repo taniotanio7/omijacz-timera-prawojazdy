@@ -27,6 +27,7 @@ __author__ = "Jonatan Witoszek"
 __copyright__ = "Jonatan Witoszek"
 __license__ = "MIT"
 
+
 def execute():
     strona = automator.Prawojazdy()
     # Logowanie i wybieranie kursu
@@ -63,6 +64,7 @@ def execute():
         strona.nastepna_strona()
     strona.zamknij_strone()
 
+
 def main():
     args = docopt(__doc__)
     # Arguments handling
@@ -75,8 +77,9 @@ def main():
             year=datetime.datetime.now().year,
             licence=__license__
         ))
-    VERBOSE = args['-v'] or False #  Todo: Add verbose messages
+    VERBOSE = args['-v'] or False  # Todo: Add verbose messages
     execute()
+
 
 if __name__ == "__main__":
     main()
