@@ -1,8 +1,15 @@
 """Uruchamia automatyzację slajdów na prawojazdy.com.pl
-Usage: omijacz_timera [-h] [-v] [-v]
--h  pokaż pomoc (o taką!)
--v  wersja
--vv  wyświetlaj więcej tekstu (verbose)
+
+Usage:
+  omijacz_timera
+  omijacz_timera (-h | --help)
+  omijacz_timera --version
+  omijacz_timera -v
+
+Options
+  -h --help  pokaż pomoc (o taką!)
+  -version  wersja
+  -v  wyświetlaj więcej tekstu (verbose)
 """
 
 from __future__ import division, print_function, absolute_import
@@ -12,8 +19,8 @@ import time
 
 from docopt import docopt
 
-import omijacz_timera as automator
-import omijacz_timera as automator_api
+import omijacz_timera.automator as automator
+import omijacz_timera.automator_api as automator_api
 
 __version__ = "0.1"
 __author__ = "Jonatan Witoszek"
@@ -59,7 +66,7 @@ def execute():
 def main():
     args = docopt(__doc__)
     # Arguments handling
-    if args['-v']:
+    if args['--version']:
         print("""omijacz-timera-prawojazdy wersja {version}
         Created by {author}
         Copyright Jonatan Witoszek - {year} {licence}""".format(
@@ -68,7 +75,7 @@ def main():
             year=datetime.datetime.now().year,
             licence=__license__
         ))
-    VERBOSE = args['-vv'] or False #  Todo: Add verbose messages
+    VERBOSE = args['-v'] or False #  Todo: Add verbose messages
     execute()
 
 if __name__ == "__main__":
