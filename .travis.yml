@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r requirements.txt
+  - python setup.py install
+script:
+  - python3 -OO -m PyInstaller ./omijacz_timera/omijacz_timera.py -n omijacz_timera --onefile --icon=./resources/car-icon.ico
