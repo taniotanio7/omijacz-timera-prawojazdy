@@ -1,8 +1,23 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 install:
-  - pip install -r requirements.txt
-  - python setup.py install
+- pip install -r requirements.txt
+- python setup.py install
 script:
-  - python3 -OO -m PyInstaller ./omijacz_timera/omijacz_timera.py -n omijacz_timera --onefile --icon=./resources/car-icon.ico
+- python3 -OO -m PyInstaller ./omijacz_timera/omijacz_timera.py -n omijacz_timera
+  --onefile --icon=./resources/car-icon.ico
+deploy:
+  - provider: pypi
+  user: "taniotanio7"
+  password:
+    secure: lIhbWVVhrYTfZSYRbmBV33ZWBVqBFfeOpF/a+V5nuq6iPVyEZdgV+dEZYzfsRAPoeW0LVLuf0ZSwAYp59fuxnhDnBfVLJvdqWFx8+07fPIG1lSKldQ7LuKmMM+CwGip1mtKbOrm+X0YpM/glHkYowzjFfrlpmAb/rnwqiuuLla4EQ05ueRJ0c3Tr1GqJV+4wCcvxCFv4F8+IAJ3UmedGumoxsHqFVher9AGwvIFtQNvGgUJEjzaXbpGQaxUgyCB5oLAasfkioJEDwo5H+h1iOyu56dzI8L3Pe3hmFEseohVv4bIK2O0UDorZcyr2VINVzTNsuMPi+TRyXvuSm4RS/G70Hzgfn+IFrWTSo8H9pJ1szO0t+j0NcErDB1PVBelAerUsiUwvIHIcfRbvKhbQ5hkEzh7wsVtgvjr+AzW0YhZpi0Rw30uIhH+adY/aiECfEpdgdpiQ6xYLHxLff6HhClbeIdi8UYNubDbXMJMb84VA9aaMec1F/54nZenwuufWfg9A/HbOsgJVgKBhcv8Tn+DKHiJ1tcML88yEr7xkMq0o73tjtlMCm8xtjKVaUFnvP5fzQYTbo/He4tVRAroMtSfUB3ivmhLGizM6MouWMzk0ndzO5yxUI3RdrPPzyg2XILSijYWXkcw4MhkUecxDIFF2/h3SyZGC9hj3VAT6l5Y=
+  on:
+    tags: true
+  - provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+
