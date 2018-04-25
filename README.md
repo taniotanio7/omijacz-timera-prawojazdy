@@ -56,7 +56,7 @@ Otworzy się nowy proces Google Chrome:
 
 2. Zaloguj się!
 
-![Strona po wpisaniu danych do logwania](/readme_images/login_screen/filled.png)
+![Strona po wpisaniu danych do logwania](/readme_images/login_screen_filled.png)
 
 > Twoje hasło nie jest nigdzie zapisywane zostaje użyte tylko do zalogowania się w przeglądarce
 
