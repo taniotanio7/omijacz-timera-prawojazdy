@@ -7,7 +7,9 @@ install:
 script:
 - python3 -OO -m PyInstaller ./omijacz_timera/omijacz_timera.py -n omijacz_timera
   --onefile --icon=./resources/car-icon.ico
-after_script: cd ~
+after_script:
+- cd ~
+- ./utils/convert-markdown.sh
 deploy:
   releases:
     api_key:

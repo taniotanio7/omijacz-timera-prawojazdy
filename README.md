@@ -4,6 +4,10 @@
 
 Nie trać czasu na nudne, powtarzające się slajdy...
 
+[![Build Status](https://travis-ci.org/taniotanio7/omijacz-timera-prawojazdy.svg?branch=master)](https://travis-ci.org/taniotanio7/omijacz-timera-prawojazdy)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f1483bc09e7003232cb7/maintainability)](https://codeclimate.com/github/taniotanio7/omijacz-timera-prawojazdy/maintainability)
+
+
 ## Opis
 
 Skrypt pozwala na "ominięcie" slajdów w kursie e-learningowym na stronie **prawojazdy.com.pl**
