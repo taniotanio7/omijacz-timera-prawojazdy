@@ -80,11 +80,11 @@ Otworzy się nowy proces Google Chrome:
 > na odczekanie, aż będziesz mógł przejść dalej
 
 
-## Zgłaszanie błędów  :poop:
+## :poop: Zgłaszanie błędów
 
 Problemy można zgłaszać tutaj: https://github.com/taniotanio7/omijacz-timera-prawojazdy/issues
 
-## Development environment
+## :construction_worker: Development environment
 
 Te instrukcje pomogą Ci uruchomić kopię projektu na twoim lokalnym urządzeniu w celu programowania lub testowania. 
 
@@ -96,7 +96,7 @@ Co potrzebujesz, aby rozpocząć
 - pip
 - git
 
-### Instalacja 
+### Instalacja
 
 Krok po kroku jak utworzyć środowisko programistyczne.
 
@@ -112,23 +112,23 @@ Zainstaluj potrzebne zależności
 pip install -r requirements.txt
 ```
 
-## Todo
+## :recycle: Todo
 
 - [ ] Przyśpieszyć działanie
 - [ ] Refaktoryzacja
 - [ ] Poprawa obsługi slajdów z pytaniem
 - [ ] Możliwość wyboru innych przeglądarek niż Chrome
 
-## Autorzy  :sunglasses:
+## :sunglasses: Autorzy
 
 * **Jonatan Witoszek** - *Początek* - [taniotanio7](https://github.com/taniotanio7)
 
 Zobacz pełną listę [osób](https://github.com/taniotanio7/omijacz-timera-prawojazdy/contributors), która pomogła w projekcie.
 
-## Licence  :briefcase:
+## :page_facing_up: Licence
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments  :clap:
+## :clap: Acknowledgments
 
 * Hat tip to Kenneth Reitz for his setup.py example!
