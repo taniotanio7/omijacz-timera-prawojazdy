@@ -6,3 +6,4 @@ selenium
 docopt==0.6.2
 ipython
 twine==1.11.0
+pyinstaller
