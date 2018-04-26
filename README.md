@@ -1,12 +1,14 @@
 <h1 align="center">🚘 Omijacz Timera Prawojazdy 🚔</h1>
 
-🎉 Żyj! 🎉
-
-Nie trać czasu na nudne, powtarzające się slajdy...
-
+<p align="center">
 [![Build Status](https://travis-ci.org/taniotanio7/omijacz-timera-prawojazdy.svg?branch=master)](https://travis-ci.org/taniotanio7/omijacz-timera-prawojazdy)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f1483bc09e7003232cb7/maintainability)](https://codeclimate.com/github/taniotanio7/omijacz-timera-prawojazdy/maintainability)
 [![Updates](https://pyup.io/repos/github/taniotanio7/omijacz-timera-prawojazdy/shield.svg)](https://pyup.io/repos/github/taniotanio7/omijacz-timera-prawojazdy/)
+</p>
+
+> 🎉 Żyj! 🎉
+>
+> Nie trać czasu na nudne, powtarzające się slajdy...
 
 ## Opis
 
