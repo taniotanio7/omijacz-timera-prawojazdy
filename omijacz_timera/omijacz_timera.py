@@ -19,9 +19,9 @@ import time
 
 from docopt import docopt
 
+import omijacz_timera.additional as additional
 import omijacz_timera.automator as automator
 import omijacz_timera.automator_api as automator_api
-import omijacz_timera.additional as additional
 
 __version__ = "0.1"
 __author__ = "Jonatan Witoszek"
@@ -47,6 +47,7 @@ def execute():
     while not strona.check_if_ended():
         # Sprawdzenie czy nie pytanie TODO: Temporary fix
         if strona.check_if_not_question():
+            time.sleep(10)
             strona.nastepna_strona()
             continue
         # Odczytywanie danych ze strony
@@ -57,10 +58,10 @@ def execute():
         content = ajax.get_content_request(slide_numer)
         if not ajax.send_request(content, ajax_header):
             print("Niepowodzenie zapytania. Próbuję jeszcze raz...")
-            time.sleep(5)
+            # time.sleep(2.5)
             ajax.send_request(content, ajax_header)
             strona.browser.reload()
-        time.sleep(2.5)
+        # time.sleep(2.5)
         # Przechodzenie do następnej strony
         strona.nastepna_strona()
     strona.zamknij_strone()
