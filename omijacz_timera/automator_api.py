@@ -43,13 +43,12 @@ class Prawojazdy_API:
         }
         return content
 
-    def get_content(self, slide_id):
+    def get_content_request(self, slide_id):
         """
         Zwraca gotową zawartość zapytania
         :param slide_id: Numer slajdu
         :return: Zawartość zapytania (params)
         """
-        # content = "content=&contentId={contentId}&currentSlide={currentSlide}&scenarioId={scenarioId}&slideType={slideType}"
         content_parsed = self.get_content_from_url()
         content_dict = {
             "content": "",

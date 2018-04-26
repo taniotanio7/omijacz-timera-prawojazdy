@@ -21,6 +21,7 @@ from docopt import docopt
 
 import omijacz_timera.automator as automator
 import omijacz_timera.automator_api as automator_api
+import omijacz_timera.additional as additional
 
 __version__ = "0.1"
 __author__ = "Jonatan Witoszek"
@@ -53,7 +54,7 @@ def execute():
         if slide_numer == "0":
             strona.nastepna_strona()
         # Tworzenie i przekazywanie zapytania AJAX
-        content = ajax.get_content(slide_numer)
+        content = ajax.get_content_request(slide_numer)
         if not ajax.send_request(content, ajax_header):
             print("Niepowodzenie zapytania. Próbuję jeszcze raz...")
             time.sleep(5)
@@ -79,6 +80,7 @@ def main():
         ))
     VERBOSE = args['-v'] or False  # Todo: Add verbose messages
     execute()
+    additional.Console.beep()
 
 
 if __name__ == "__main__":
