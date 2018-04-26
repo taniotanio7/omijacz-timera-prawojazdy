@@ -1,4 +1,4 @@
-# 🚘 Omijacz Timera Prawojazdy 🚔
+<h1 align="center">🚘 Omijacz Timera Prawojazdy 🚔</h1>
 
 🎉 Żyj! 🎉
 
