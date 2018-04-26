@@ -20,7 +20,7 @@ potrzebny na oznaczenie slajdu jako obejrzany.
 
 ### :poop: Znane bugi
 
-- Problem z obsługą slajdów z pytaniem (skrypt po prostu czeka 10 sekund, a następnie przecodzi dalej)
+- Problem z obsługą slajdów z pytaniem (skrypt po prostu czeka 10 sekund, a następnie przechodzi dalej)
 - Po ponownym zalogowaniu się na stronie wyświetla się informacja o tym, że aktywna jest inna sesja. Wystarczy wejść na główną jeszcze raz i ponownie wybrać kurs.
 
 
