@@ -10,8 +10,18 @@
 
 ## Opis
 
-Skrypt pozwala na "ominięcie" slajdów w kursie e-learningowym na stronie **prawojazdy.com.pl**
-Wykorzystuje sposób działania serwisu oraz fakt, że po stronie serwera nie następuje żadna weryfikacja czy slajd został faktycznie obejrzany.
+Skrypt pozwala na "ominięcie" slajdów w kursie e-learningowym na stronie **prawojazdy.com.pl**.
+
+Niestety obecnie używana w serwisie metoda komunikacji z serwerem jest bardzo zawodna, zwłaszcza podczas korzystania
+z urządzeń mobilnych.
+
+Obejście fakt, że po stronie serwera nie następuje żadna weryfikacja czy w rzeczywistości minął odpowiedni czas
+potrzebny na oznaczenie slajdu jako obejrzany.
+
+### :poop: Znane bugi
+
+- Problem z obsługą slajdów z pytaniem (skrypt po prostu czeka 10 sekund, a następnie przecodzi dalej)
+- Po ponownym zalogowaniu się na stronie wyświetla się informacja o tym, że aktywna jest inna sesja. Wystarczy wejść na główną jeszcze raz i ponownie wybrać kurs.
 
 
 ## Instalacja
@@ -117,6 +127,7 @@ pip install -r requirements.txt
 
 - [ ] Przyśpieszyć działanie
 - [ ] Refaktoryzacja
+- [ ] Wylogowywanie się po zakończonej sesjii
 - [ ] Poprawa obsługi slajdów z pytaniem
 - [ ] Możliwość wyboru innych przeglądarek niż Chrome
 
