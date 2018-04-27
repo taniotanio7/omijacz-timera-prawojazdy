@@ -59,6 +59,10 @@ REQUIRED = [
     'requests', 'splinter', 'docopt'
 ]
 
+DEPENDENCY_LINKS = [
+    'git+ssh://git@github.com:taniotanio7/chromedriver_installer.git@master#egg=new_chromedriver_installer-0.0.7'
+]
+
 # The rest you shouldn't have to touch too much :)
 # ------------------------------------------------
 # Except, perhaps the License and Trove Classifiers!
@@ -135,6 +139,7 @@ setup(
         'console_scripts': ['omijacz_timera=omijacz_timera.omijacz_timera:main'],
     },
     install_requires=REQUIRED,
+    dependency_links=DEPENDENCY_LINKS,
     include_package_data=True,
     license='MIT',
     classifiers=[
