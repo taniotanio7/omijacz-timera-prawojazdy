@@ -141,10 +141,10 @@ pip install -r requirements.txt
 
 - [x] Przyśpieszyć działanie
 - [x] Dodać pobieranie ChromeDriver podczas instalacji
-- [ ] Poprawić opis na PyPI
-- [ ] Refaktoryzacja
+- [x] Poprawić opis na PyPI
 - [ ] Wylogowywanie się po zakończonej sesjii
 - [ ] Poprawa obsługi slajdów z pytaniem
+- [ ] Refaktoryzacja
 - [ ] Możliwość wyboru innych przeglądarek niż Chrome
 
 ## :sunglasses: Autorzy

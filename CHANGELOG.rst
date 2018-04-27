@@ -25,3 +25,8 @@ Wersja 0.4
 ==========
 
 🏁🐧 Automatyczne instalowanie ChromeDriver
+
+Fix 0.4.1
+=========
+
+📝 Aktualizacja README.rst

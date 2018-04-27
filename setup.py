@@ -52,7 +52,7 @@ URL = 'http://github.com/taniotanio7/omijacz-timera-prawojazdy'
 EMAIL = 'jonatanwitoszek@gmail.com'
 AUTHOR = 'Jonatan Witoszek'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.4.0'
+VERSION = '0.4.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
