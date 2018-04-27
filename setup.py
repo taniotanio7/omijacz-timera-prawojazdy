@@ -139,6 +139,10 @@ setup(
         'console_scripts': ['omijacz_timera=omijacz_timera.omijacz_timera:main'],
     },
     install_requires=REQUIRED,
+    setup_requires=[
+        'setuptools-markdown'
+    ],
+    long_description_markdown_filename='README.md',
     dependency_links=DEPENDENCY_LINKS,
     include_package_data=True,
     license='MIT',
