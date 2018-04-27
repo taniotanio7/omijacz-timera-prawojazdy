@@ -20,3 +20,8 @@ Wersja 0.3
 
 ⚡️ Szybsze działanie
 ✨ Dźwięk po ukończeniu
+
+Wersja 0.4
+==========
+
+🏁🐧 Automatyczne instalowanie ChromeDriver

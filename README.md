@@ -41,18 +41,32 @@ pip3 install omijacz-timera
 
 ### Ręczna instalacja
 
-Pobierz .zip: https://github.com/taniotanio7/omijacz-timera-prawojazdy/archive/master.zip i rozpakuj.
+1. [Pobierz .zip](https://github.com/taniotanio7/omijacz-timera-prawojazdy/archive/master.zip) z repozytorium i rozpakuj
 
-Przejdź do folderu z projektem:
+2. W PATH Pythona zainstaluj [najnowszą wersję ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+
+*Wystarczy że plik znajdzie się w jednym z wymienionych folderów*
+
+> 💥 Uwaga! ChromeDriver musi być wypakowany z archiwum
+
+> 🍻 Protip: PATH można sprawdzić wpisując...
+>
+> Windows: `PATH`
+>
+> Linux: `echo $PATH`
+
+3. Przejdź do folderu z projektem:
 
 ```
 cd omijacz-timera-prawojazdy
 ```
 
-Zainstaluj z użyciem setup.py:
+4. Zainstaluj z użyciem setup.py:
 ```
 python setup.py install
 ```
+
+
 ## Korzystanie
 
 1. W wierszu poleceń / terminalu wpisz:
