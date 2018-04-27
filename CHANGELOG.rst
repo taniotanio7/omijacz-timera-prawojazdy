@@ -14,3 +14,9 @@ Wersja 0.2
 ===========
 
 ✔︎ Dodano możliwość instalacji przez setup.py
+
+Wersja 0.3
+===========
+
+⚡️ Szybsze działanie
+✨ Dźwięk po ukończeniu
