@@ -126,7 +126,7 @@ pip install -r requirements.txt
 ## :recycle: Todo
 
 - [x] Przyśpieszyć działanie
-- [ ] Dodać pobieranie ChromeDriver podczas instalacji
+- [x] Dodać pobieranie ChromeDriver podczas instalacji
 - [ ] Poprawić opis na PyPI
 - [ ] Refaktoryzacja
 - [ ] Wylogowywanie się po zakończonej sesjii
