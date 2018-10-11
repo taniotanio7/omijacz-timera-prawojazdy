@@ -1,6 +1,6 @@
 # Required packages for development environment
 # If you just want just to use the script, then the setup.py install will do everything for you
-requests==2.18.4
+requests==2.19.1
 splinter
 selenium
 docopt==0.6.2
