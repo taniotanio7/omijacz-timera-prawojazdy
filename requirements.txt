@@ -5,7 +5,7 @@ splinter
 selenium
 docopt==0.6.2
 ipython
-twine==1.11.0
+twine==3.1.1
 pyinstaller
 pandoc
 wheel
